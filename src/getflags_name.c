@@ -171,26 +171,26 @@ get_eth_fdir_types_flags(uint32_t flags){
   }
 }
 
-/* /\* create a mask and get flagname if bit is set  */
-/*  *\/ */
-/* void  */
-/* get_fdir_types_mask(uint32_t flags){ */
+/* create a mask and get flagname if bit is set
+ */
+void
+get_fdir_types_mask(uint32_t flags){
 
-/*  uint32_t bitmask = 0; */
-/*  uint16_t count = 1; */
+ uint32_t bitmask = 0;
+ uint16_t count = 1;
 
-/*  for ( int i = 0 ; i < 32 ; i++) { */
-/*    bitmask = 1 << i; */
+ for ( int i = 0 ; i < 32 ; i++) {
+   bitmask = 1 << i;
    
-/*    const char* text = NULL; */
-/*    text = get_eth_fdir_types_flags(flags & bitmask); */
-/*    if (text !=NULL){ */
-/*      printf("%s ",text); */
-/*      count ++; */
-/*      printf("\n"); */
-/*    } */
-/*  }//endfor */
-/* } */
+   const char* text = NULL;
+   text = get_eth_fdir_types_flags(flags & bitmask);
+   if (text !=NULL){
+     printf("%s ",text);
+     count ++;
+     printf("\n");
+   }
+ }//endfor
+}
 
 
 
