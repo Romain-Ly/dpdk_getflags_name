@@ -1,6 +1,6 @@
 ## author : Romain Ly 
 
-## Translation Functions between bitmask <-> FlagsName (dpdk, nic device)
+## Translation Functions between bitmask and FlagsName (dpdk, nic device)
 
 ## how to :
 make clean && make 
